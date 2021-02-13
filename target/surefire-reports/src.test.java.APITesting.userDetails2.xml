@@ -1,0 +1,13 @@
+<testsuite failures="0" name="src/test/java/APITesting/userDetails2.feature" skipped="0" tests="1" time="1.765409">
+  <testcase classname="src.test.java.APITesting.userDetails2" name="request user 3 details" time="1.765409">
+    <system-out>* def expectedOutput = read('..//..//testdata//result2.json') ............. passed
+* def result = call read('userDetails.feature') ........................... passed
+Given url 'https://reqres.in/api/users/4' ................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == expectedOutput ...................................... passed
+Then print 'result--------', result ....................................... passed
+* def first_name = result.response.data.first_name ........................ passed
+Then print 'first_name_value', first_name ................................. passed</system-out>
+  </testcase>
+</testsuite>

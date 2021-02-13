@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.APITesting.userDetailAutfeature</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">0</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">1</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2021-01-16 10:08:47 pm</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item failed">
+                        <a href="#[1:6]">[1:6] Authentication test </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/APITesting/userDetailAut..feature</span><span class="feature-description">API Authentication</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:6]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Authentication test </span>
+                        </div>
+                        <div class="scenario-time failed">ms: 1189</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:6]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:6]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url 'https://reqres.in/api/register'</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">22:08:46.104 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">Given path 'token'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">And form field grant_type = 'client_credentials'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">And form field client_id = ''</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">And form field client_secret = ''</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">1174</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">22:08:46.706 request:
+1 &gt; POST https://reqres.in/api/register/token
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 55
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.9.1)
+grant_type=client_credentials&amp;client_id=&amp;client_secret=
+
+22:08:47.213 response time in milliseconds: 506.21
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 612b28365c56425d-LHR
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 119
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 16 Jan 2021 22:08:47 GMT
+1 &lt; Etag: W/"77-OhsWsWe4oyYqbhpHezeHikN+hbM"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=6lmNQ%2FitjsYaXIryqY5ibRwy9DJHyt1L4r%2FwGEZEkTq8TX2q2iNhyJACeNRIEj6f7E%2Fq%2F8KDPlfBVXn9PRwzh0epkOcbkGCvD5M%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d390dedc5712c03c50e857b39d4b883911610834927; expires=Mon, 15-Feb-21 22:08:47 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 07aed775f90000425d4833b000000001
+{"grant_type":"client_credentials","client_id":"","client_secret":"","id":"389","createdAt":"2021-01-16T22:08:47.131Z"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref failed">7</div>
+                            <div class="step-cell failed">Then status 200</div>
+                        </div>
+                        <div class="time-cell failed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">22:08:47.339 status code was: 201, expected: 200, response time: 506, url: https://reqres.in/api/register/token, response: {"createdAt":"2021-01-16T22:08:47.131Z","grant_type":"client_credentials","client_secret":"","id":"389","client_id":""}
+userDetailAut..feature:13 - status code was: 201, expected: 200, response time: 506, url: https://reqres.in/api/register/token, response: {"createdAt":"2021-01-16T22:08:47.131Z","grant_type":"client_credentials","client_secret":"","id":"389","client_id":""}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref skipped">8</div>
+                            <div class="step-cell skipped">* def accessToken = response.access_token</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref skipped">9</div>
+                            <div class="step-cell skipped">Given path ''</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref skipped">10</div>
+                            <div class="step-cell skipped">And header Autherization = 'Bearer' + accessToken</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref skipped">11</div>
+                            <div class="step-cell skipped">When match GET</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref skipped">12</div>
+                            <div class="step-cell skipped">Then status 200</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

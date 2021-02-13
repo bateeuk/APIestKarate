@@ -1,0 +1,25 @@
+<testsuite failures="0" name="src/test/java/APITesting/create.feature" skipped="0" tests="2" time="2.040494">
+  <testcase classname="src.test.java.APITesting.create" name="Create user without YAML file" time="1.336155">
+    <system-out>* url "https://reqres.in" ................................................. passed
+* def mainUrl = "/api/users" .............................................. passed
+Given path mainUrl ........................................................ passed
+And request {"email" : "testing@test.com", "name" : "Anne"} ............... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.APITesting.create" name="Create user from YAML file" time="0.704339">
+    <system-out>* url "https://reqres.in" ................................................. passed
+* def mainUrl = "/api/users" .............................................. passed
+Given path mainUrl ........................................................ passed
+And request {"email" : "testing@test.com", "name" : "Anne"} ............... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url "https://reqres.in" ................................................. passed
+* def mainUrl = "/api/users" .............................................. passed
+* def userdata = read('..//..//testdata//adduser.yaml') ................... passed
+Given path mainUrl ........................................................ passed
+And request userdata ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

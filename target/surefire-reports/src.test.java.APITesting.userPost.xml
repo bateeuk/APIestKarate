@@ -1,0 +1,12 @@
+<testsuite failures="0" name="src/test/java/APITesting/userPost.feature" skipped="0" tests="1" time="4.405455">
+  <testcase classname="src.test.java.APITesting.userPost" name="create user details" time="4.405455">
+    <system-out>* def jsonPayload1 =  read('..//..//testdata//resultPost.yaml') ........... passed
+* url "https://reqres.in/api/users" ....................................... passed
+* header Content-Type = 'application/yaml' ................................ passed
+And request jsonPayload1 .................................................. passed
+And param delay = 3 ....................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+Then print 'response----', response ....................................... passed</system-out>
+  </testcase>
+</testsuite>

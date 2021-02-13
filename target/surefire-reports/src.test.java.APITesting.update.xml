@@ -1,0 +1,27 @@
+<testsuite failures="0" name="src/test/java/APITesting/update.feature" skipped="0" tests="2" time="1.552225">
+  <testcase classname="src.test.java.APITesting.update" name="Create user from YAML file" time="1.315361">
+    <system-out>* url "https://reqres.in" ................................................. passed
+* def mainUrl = "/api/users" .............................................. passed
+* def userdata = read('..//..//testdata//Createuser.yaml') ................ passed
+Given path mainUrl ........................................................ passed
+And request userdata ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.APITesting.update" name="Update user from YAML file" time="0.236864">
+    <system-out>* url "https://reqres.in" ................................................. passed
+* def mainUrl = "/api/users" .............................................. passed
+* def userdata = read('..//..//testdata//Createuser.yaml') ................ passed
+Given path mainUrl ........................................................ passed
+And request userdata ...................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* url "https://reqres.in" ................................................. passed
+* def mainUrl = "/api/users" .............................................. passed
+* def userdata = read('..//..//testdata//updateuser.yaml') ................ passed
+Given path mainUrl ........................................................ passed
+And request userdata ...................................................... passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

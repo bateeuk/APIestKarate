@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/java/APITesting/delete.feature" skipped="0" tests="1" time="1.116883">
+  <testcase classname="src.test.java.APITesting.delete" name="Create and delete user without YAML file" time="1.116883">
+    <system-out>* url "https://reqres.in" ................................................. passed
+* def mainUrl = "/api/users/2" ............................................ passed
+Given path mainUrl ........................................................ passed
+And request {"email" : "testing@test.com", "name" : "Anne"} ............... passed
+When method post .......................................................... passed
+And def newUser = $..id ................................................... passed
+Then status 201 ........................................................... passed
+Given path mainUrl, newUser ............................................... passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

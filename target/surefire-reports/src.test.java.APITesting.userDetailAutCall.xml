@@ -1,0 +1,16 @@
+<testsuite failures="1" name="src/test/java/APITesting/userDetailAutCall.feature" skipped="0" tests="1" time="1.454313">
+  <testcase classname="src.test.java.APITesting.userDetailAutCall" name="GET call" time="1.454313">
+    <failure message="-unknown-:4 - &#10;userDetailAut2.feature:16 - status code was: 400, expected: 200, response time: 433, url: https://reqres.in/api/register, response: {&quot;error&quot;:&quot;Note: Only defined users succeed registration&quot;}">* def myFeature = call read('userDetailAut2.feature'){email:'eve.holt@reqres.in', password:'pistol'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:4 - 
+userDetailAut2.feature:16 - status code was: 400, expected: 200, response time: 433, url: https://reqres.in/api/register, response: {"error":"Note: Only defined users succeed registration"}&#13;
+	at ✽.* def myFeature = call read('userDetailAut2.feature'){email:'eve.holt@reqres.in', password:'pistol'} (-unknown-:4)&#13;
+
+* def authToken = myFeature.accessToken ................................... skipped
+When url  'https://reqres.in/api/users?page=2' ............................ skipped
+And headers Autherization = authToken ..................................... skipped
+When method GET ........................................................... skipped
+Then status 204 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>

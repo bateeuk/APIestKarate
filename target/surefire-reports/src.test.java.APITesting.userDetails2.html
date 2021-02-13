@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.APITesting.userDetails2</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2021-01-16 04:26:33 pm</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:9]">[1:9] request user 3 details </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/APITesting/userDetails2.feature</span><span class="feature-description">user Details</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:9]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">request user 3 details </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1765</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:9]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* def expectedOutput = read('..//..//testdata//result2.json')</div>
+                        </div>
+                        <div class="time-cell passed">361</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">16:26:31.440 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-cell comment">#* def feature = read('userDetails.feature')</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def result = call read('userDetails.feature')</div>
+                        </div>
+                        <div class="time-cell passed">1150</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="2.1">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">/IdeaProjects/APIestKarate/src/test/java/APITesting/userDetails.feature</div>
+                        </div>
+                        <div class="time-cell passed">1126</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def expectedOutput1 = read('..//..//testdata//result1.json')</div>
+                        </div>
+                        <div class="time-cell passed">15</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell comment">#* def expectedOutput1A = read('..//..//testdata//result1A.json')</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="4">
+                            <div class="step-ref bg-step">4</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def myVar = read('../../testdata/result1.yaml')</div>
+                        </div>
+                        <div class="time-cell passed">55</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="5">
+                            <div class="step-ref bg-step">5</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given url 'https://reqres.in/api/users/2'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="6">
+                            <div class="step-ref bg-step">6</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">757</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">16:26:32.310 request:
+1 &gt; GET https://reqres.in/api/users/2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.9.1)
+
+16:26:32.662 response time in milliseconds: 346.52
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 5675
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 612932e17d294268-LHR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 16 Jan 2021 16:26:32 GMT
+1 &lt; Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=tI1zSyhxQk0Ih2%2BXezo0%2Bz%2BEzM2WREgTHcBew5cGkoUcqbcoulAQeC2cJYWaohrSbogB%2Bu0XiZh4mD1DxqUzmjUSr5%2F4HqiMmU8%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d784151e731a8ac78f7cac400573cec971610814392; expires=Mon, 15-Feb-21 16:26:32 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 07ad9e20ef00004268f283a000000001
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="7">
+                            <div class="step-ref bg-step">7</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="8">
+                            <div class="step-ref bg-step">8</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then print response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="8">16:26:32.664 [print] {
+  "data": {
+    "last_name": "Weaver",
+    "id": 2,
+    "avatar": "https://reqres.in/img/faces/2-image.jpg",
+    "first_name": "Janet",
+    "email": "janet.weaver@reqres.in"
+  },
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}</div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="9">
+                            <div class="step-ref bg-step">9</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And match response == expectedOutput1[0]</div>
+                        </div>
+                        <div class="time-cell passed">17</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="10">
+                            <div class="step-ref bg-step">10</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And match response == myVar</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="11">
+                            <div class="step-ref bg-step">11</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And match response.data.id == 2</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="12">
+                            <div class="step-ref bg-step">12</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And match response.data.last_name != null</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell comment"># -- to check if a field is not present use a variable</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell comment">#And match response.data.job_code == null [don't work]</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="13">
+                            <div class="step-ref bg-step">13</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def job_code = response.data.job_code</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="14">
+                            <div class="step-ref bg-step">14</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And match job_code == null</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="15">
+                            <div class="step-ref bg-step">15</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def expectedOutput1 = read('..//..//testdata//result1.json')</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell comment">#* def expectedOutput1A = read('..//..//testdata//result1A.json')</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="16">
+                            <div class="step-ref bg-step">16</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def myVar = read('../../testdata/result1.yaml')</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="17">
+                            <div class="step-ref bg-step">17</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given url 'https://reqres.in/api/users/3'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="18">
+                            <div class="step-ref bg-step">18</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">246</div>
+                    </div>
+                    <div class="preformatted" data-parent="18">16:26:32.708 request:
+1 &gt; GET https://reqres.in/api/users/3
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.9.1)
+
+16:26:32.952 response time in milliseconds: 242.11
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 4568
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 612932e2dd2e066a-LHR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 16 Jan 2021 16:26:32 GMT
+1 &lt; Etag: W/"112-EeInfgHWtnxhYRnwgZUB667e024"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=1DXxFk4qYomukOAYD5CzmfKNNKQvsdNkOeAryO7d2DM1rvG7gz2ZPlLF17Cozw9fjYZOeFY4beMCB4ZaUXLXdGZwIAMlimt%2Fx34%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=da81551f1c222b1f2589ea1bcd11307691610814392; expires=Mon, 15-Feb-21 16:26:32 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 07ad9e21d70000066a89a9d000000001
+{"data":{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="19">
+                            <div class="step-ref bg-step">19</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="20">
+                            <div class="step-ref bg-step">20</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then print response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="20">16:26:32.955 [print] {
+  "data": {
+    "last_name": "Wong",
+    "id": 3,
+    "avatar": "https://reqres.in/img/faces/3-image.jpg",
+    "first_name": "Emma",
+    "email": "emma.wong@reqres.in"
+  },
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}</div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="21">
+                            <div class="step-ref bg-step">21</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And match response == expectedOutput1[1]</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref passed">22</div>
+                            <div class="step-cell passed">Given url 'https://reqres.in/api/users/4'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref passed">23</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">240</div>
+                    </div>
+                    <div class="preformatted" data-parent="23">16:26:32.972 request:
+1 &gt; GET https://reqres.in/api/users/4
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.9.1)
+
+16:26:33.209 response time in milliseconds: 236.90
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1412
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 612932e4fdcdd8a9-CPH
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 16 Jan 2021 16:26:33 GMT
+1 &lt; Etag: W/"110-Xdg3LtI+q2zMxihHlfeIZQo/bvY"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=wcFdbq%2B9OjNEq7s67fjOvZi3LgYxQI2a2CmPbEBC7YRTiRvxMYFvUVEzzkIfz0qH0hU68cP6jVwgtIOSkc9e%2BqaxKIAmUtxHiBU%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d081ab59155a0e1c8b06b7871018348c31610814393; expires=Mon, 15-Feb-21 16:26:33 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 07ad9e23170000d8a92419d000000001
+{"data":{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref passed">24</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="25">
+                            <div class="step-ref passed">25</div>
+                            <div class="step-cell passed">And match response == expectedOutput</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="26">
+                            <div class="step-ref passed">26</div>
+                            <div class="step-cell passed">Then print 'result--------', result</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="preformatted" data-parent="26">16:26:33.213 [print] result-------- {
+  "expectedOutput1": [
+    {
+      "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+      },
+      "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+      }
+    },
+    {
+      "data": {
+        "id": 3,
+        "email": "emma.wong@reqres.in",
+        "first_name": "Emma",
+        "last_name": "Wong",
+        "avatar": "https://reqres.in/img/faces/3-image.jpg"
+      },
+      "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+      }
+    }
+  ],
+  "__arg": null,
+  "responseType": "json",
+  "myVar": {
+    "data": {
+      "last_name": "#ignore",
+      "id": 2,
+      "avatar": "https://reqres.in/img/faces/2-image.jpg",
+      "first_name": "Janet",
+      "email": "janet.weaver@reqres.in"
+    },
+    "support": {
+      "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+      "url": "https://reqres.in/#support-heading"
+    }
+  },
+  "responseHeaders": {
+    "Date": [
+      "Sat, 16 Jan 2021 16:26:32 GMT"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Connection": [
+      "keep-alive"
+    ],
+    "Set-Cookie": [
+      "__cfduid=da81551f1c222b1f2589ea1bcd11307691610814392; expires=Mon, 15-Feb-21 16:26:32 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ],
+    "Access-Control-Allow-Origin": [
+      "*"
+    ],
+    "Etag": [
+      "W/\"112-EeInfgHWtnxhYRnwgZUB667e024\""
+    ],
+    "Via": [
+      "1.1 vegur"
+    ],
+    "Cache-Control": [
+      "max-age=14400"
+    ],
+    "CF-Cache-Status": [
+      "HIT"
+    ],
+    "Age": [
+      "4568"
+    ],
+    "cf-request-id": [
+      "07ad9e21d70000066a89a9d000000001"
+    ],
+    "Expect-CT": [
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+    ],
+    "Report-To": [
+      "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report?s=1DXxFk4qYomukOAYD5CzmfKNNKQvsdNkOeAryO7d2DM1rvG7gz2ZPlLF17Cozw9fjYZOeFY4beMCB4ZaUXLXdGZwIAMlimt%2Fx34%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+    ],
+    "NEL": [
+      "{\"report_to\":\"cf-nel\",\"max_age\":604800}"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "Server": [
+      "cloudflare"
+    ],
+    "CF-RAY": [
+      "612932e2dd2e066a-LHR"
+    ]
+  },
+  "responseTime": 242,
+  "response": {
+    "data": {
+      "last_name": "Wong",
+      "id": 3,
+      "avatar": "https://reqres.in/img/faces/3-image.jpg",
+      "first_name": "Emma",
+      "email": "emma.wong@reqres.in"
+    },
+    "support": {
+      "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+      "url": "https://reqres.in/#support-heading"
+    }
+  },
+  "requestTimeStamp": 1610814392708,
+  "expectedOutput": {
+    "data": {
+      "id": 4,
+      "email": "eve.holt@reqres.in",
+      "first_name": "Eve",
+      "last_name": "Holt",
+      "avatar": "https://reqres.in/img/faces/4-image.jpg"
+    },
+    "support": {
+      "url": "https://reqres.in/#support-heading",
+      "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+  },
+  "responseStatus": 200,
+  "__loop": -1,
+  "responseCookies": {
+    "__cfduid": {
+      "name": "__cfduid",
+      "value": "da81551f1c222b1f2589ea1bcd11307691610814392",
+      "domain": "reqres.in",
+      "path": "/",
+      "expires": "1613406392000",
+      "persistent": "true",
+      "secure": "true"
+    }
+  }
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref passed">27</div>
+                            <div class="step-cell passed">* def first_name = result.response.data.first_name</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment">#And match response == expectedOutput2</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment">#Then print response</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment">#* def first_name = result.response.data.first_name</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref passed">28</div>
+                            <div class="step-cell passed">Then print 'first_name_value', first_name</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="28">16:26:33.221 [print] first_name_value Emma</div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

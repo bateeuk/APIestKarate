@@ -1,0 +1,18 @@
+<testsuite failures="0" name="src/test/java/APITesting/retrieve.feature" skipped="0" tests="1" time="2.400907">
+  <testcase classname="src.test.java.APITesting.retrieve" name="Verify GET request" time="2.400907">
+    <system-out>* url "https://reqres.in" ................................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def mainUrl = "/api/users/2" ............................................ passed
+* def expectedOutput = read('..//..//testdata//result1.json') ............. passed
+Given path mainUrl ........................................................ passed
+And param page = 2 ........................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response ==expectedOutput ....................................... passed
+And match response.data.id == 2 ........................................... passed
+And match response.data.last_name != null ................................. passed
+* def job_code = response.data.job_code ................................... passed
+And match job_code == null ................................................ passed</system-out>
+  </testcase>
+</testsuite>

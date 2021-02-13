@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.APITesting.delete</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2021-01-07 11:05:44 am</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:7]">[1:7] Create and delete user without YAML file </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/APITesting/delete.feature</span><span class="feature-description">create user without yaml</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:7]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Create and delete user without YAML file </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1117</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:7]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:7]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url "https://reqres.in"</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">11:05:43.277 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[1:7]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def mainUrl = "/api/users/2"</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">Given path mainUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">And request {"email" : "testing@test.com", "name" : "Anne"}</div>
+                        </div>
+                        <div class="time-cell passed">65</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">816</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">11:05:43.806 request:
+1 &gt; POST https://reqres.in/api/users/2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 42
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.9.1)
+{"email":"testing@test.com","name":"Anne"}
+
+11:05:44.187 response time in milliseconds: 379.72
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 60dd34928ee540cb-LHR
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 92
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 07 Jan 2021 11:05:44 GMT
+1 &lt; Etag: W/"5c-FlBm/co/5f7H/khz94wib0DHw3M"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=xH0cNKRjnZ1btlbJ9d8HT8tvklwlWr2tzJ6W8K1GeNb98Jl2tsDzMPGakVDjcFY2ajk2OJopnu5dzltcPn%2FL20o9ObKsLArpW0o%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d8596eed6701cf4f3c8309ee0f0a78ca61610017544; expires=Sat, 06-Feb-21 11:05:44 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 077e1f2f98000040cb2b88a000000001
+{"email":"testing@test.com","name":"Anne","id":"842","createdAt":"2021-01-07T11:05:44.118Z"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">And def newUser = $..id</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">Then status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">Given path mainUrl, newUser</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">When method delete</div>
+                        </div>
+                        <div class="time-cell passed">223</div>
+                    </div>
+                    <div class="preformatted" data-parent="9">11:05:44.192 request:
+2 &gt; DELETE https://reqres.in/api/users/2/842
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: __cfduid=d8596eed6701cf4f3c8309ee0f0a78ca61610017544
+2 &gt; Host: reqres.in
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.9.1)
+
+11:05:44.413 response time in milliseconds: 220.18
+2 &lt; 204
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; CF-RAY: 60dd3493fa0ddbd7-LHR
+2 &lt; Connection: keep-alive
+2 &lt; Content-Length: 0
+2 &lt; Date: Thu, 07 Jan 2021 11:05:44 GMT
+2 &lt; Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=GI9IspsnVkoNIyptfCQjs0j7kirSVcRhw6QPunK6T0iPPjL1be8X1%2Fh5YzsADC%2Fekk6ZXKulsEnmIszWOb5eEuCvm8BPy7S%2FtCs%3D"}],"group":"cf-nel","max_age":604800}
+2 &lt; Server: cloudflare
+2 &lt; Via: 1.1 vegur
+2 &lt; X-Powered-By: Express
+2 &lt; cf-request-id: 077e1f307b0000dbd7c1942000000001</div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">Then status 204</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

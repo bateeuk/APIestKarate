@@ -1,0 +1,11 @@
+<testsuite failures="0" name="src/test/java/APITesting/userDetailAut2.feature" skipped="0" tests="1" time="0.880439">
+  <testcase classname="src.test.java.APITesting.userDetailAut2" name="Authentication test" time="0.880439">
+    <system-out>* url 'https://reqres.in/api/register' .................................... passed
+And form field email = 'eve.holt@reqres.in' ............................... passed
+And form field password = 'pistol' ........................................ passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* def accessToken = response.token ........................................ passed
+Then print 'accessToken-------', accessToken .............................. passed</system-out>
+  </testcase>
+</testsuite>

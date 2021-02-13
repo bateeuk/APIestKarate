@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.APITesting.userCallFuct</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">0</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">1</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2021-01-17 01:10:57 am</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item failed">
+                        <a href="#[1:6]">[1:6] request user 4 details </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/APITesting/userCallFuct.feature</span><span class="feature-description">Call JavaScript Function</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:6]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">request user 4 details </span>
+                        </div>
+                        <div class="scenario-time failed">ms: 1565</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:6]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:6]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* def expectedOutput = read('..//..//testdata//result1A.json')</div>
+                        </div>
+                        <div class="time-cell passed">418</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">01:10:56.247 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">Given url 'https://reqres.in/api/users?page2'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">1068</div>
+                    </div>
+                    <div class="preformatted" data-parent="3">01:10:57.269 request:
+1 &gt; GET https://reqres.in/api/users?page2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.9.1)
+
+01:10:57.707 response time in milliseconds: 433.51
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: MISS
+1 &lt; CF-RAY: 612c3311fc0940e4-LHR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 17 Jan 2021 01:10:57 GMT
+1 &lt; Etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=mdrcHDvr1JTYYB%2FZk%2BGfR9jmR6Bn2MdqyiLMXaAKGM2XFEA%2F4EdK3LmxUE%2FpPJHzCH5eRMOxYxgru9X%2FijBZjIZaGrBBGeXVsBY%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=da86c95034eacf204521aee4fcdc678c71610845857; expires=Tue, 16-Feb-21 01:10:57 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 07af7e3f38000040e471302000000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">* def data = response.data</div>
+                        </div>
+                        <div class="time-cell passed">23</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">Then print 'data-------', data</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">01:10:57.784 [print] data------- [
+  {
+    "last_name": "Bluth",
+    "id": 1,
+    "avatar": "https://reqres.in/img/faces/1-image.jpg",
+    "first_name": "George",
+    "email": "george.bluth@reqres.in"
+  },
+  {
+    "last_name": "Weaver",
+    "id": 2,
+    "avatar": "https://reqres.in/img/faces/2-image.jpg",
+    "first_name": "Janet",
+    "email": "janet.weaver@reqres.in"
+  },
+  {
+    "last_name": "Wong",
+    "id": 3,
+    "avatar": "https://reqres.in/img/faces/3-image.jpg",
+    "first_name": "Emma",
+    "email": "emma.wong@reqres.in"
+  },
+  {
+    "last_name": "Holt",
+    "id": 4,
+    "avatar": "https://reqres.in/img/faces/4-image.jpg",
+    "first_name": "Eve",
+    "email": "eve.holt@reqres.in"
+  },
+  {
+    "last_name": "Morris",
+    "id": 5,
+    "avatar": "https://reqres.in/img/faces/5-image.jpg",
+    "first_name": "Charles",
+    "email": "charles.morris@reqres.in"
+  },
+  {
+    "last_name": "Ramos",
+    "id": 6,
+    "avatar": "https://reqres.in/img/faces/6-image.jpg",
+    "first_name": "Tracey",
+    "email": "tracey.ramos@reqres.in"
+  }
+]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">* def myFun  =</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">function(arg){
+  for(i=0; i&lt;arg.length; i++){
+    if(args[i].id == 9){
+      return arg[i]
+      }
+    }
+  }</div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref failed">8</div>
+                            <div class="step-cell failed">* def userDetails = call myFun data</div>
+                        </div>
+                        <div class="time-cell failed">42</div>
+                    </div>
+                    <div class="preformatted" data-parent="8">01:10:57.834 javascript function call failed: &lt;eval&gt;:3 ReferenceError: "args" is not defined
+01:10:57.834 failed function body: function(arg){
+  for(i=0; i&lt;arg.length; i++){
+    if(args[i].id == 9){
+      return arg[i]
+      }
+    }
+  }
+userCallFuct.feature:23 - javascript function call failed: &lt;eval&gt;:3 ReferenceError: "args" is not defined</div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref skipped">9</div>
+                            <div class="step-cell skipped">Then print 'userDetails---', userDetails</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

@@ -1,0 +1,9 @@
+<testsuite failures="0" name="src/test/java/APITesting/country.feature" skipped="0" tests="1" time="1.817715">
+  <testcase classname="src.test.java.APITesting.country" name="get list of all countries" time="1.817715">
+    <system-out>* url 'https://restcountries.eu' .......................................... passed
+* header Accept = 'application/json' ...................................... passed
+Given path '/rest/v2/all' ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

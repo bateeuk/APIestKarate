@@ -1,0 +1,40 @@
+<testsuite failures="0" name="src/test/java/APITesting/userDetails.feature" skipped="0" tests="2" time="7.498384">
+  <testcase classname="src.test.java.APITesting.userDetails" name="request user 2 details" time="7.307689">
+    <system-out>* def expectedOutput1 = read('..//..//testdata//result1.json') ............ passed
+* def myVar = read('../../testdata/result1.yaml') ......................... passed
+* url 'https://reqres.in/api/users/' ...................................... passed
+Given path 2 .............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == expectedOutput1[0] .................................. passed
+And match response == myVar ............................................... passed
+And match response.data.id == 2 ........................................... passed
+And match response.data.last_name != null ................................. passed
+* def job_code = response.data.job_code ................................... passed
+And match job_code == null ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.APITesting.userDetails" name="request user 2 details" time="0.190695">
+    <system-out>* def expectedOutput1 = read('..//..//testdata//result1.json') ............ passed
+* def myVar = read('../../testdata/result1.yaml') ......................... passed
+* url 'https://reqres.in/api/users/' ...................................... passed
+Given path 2 .............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == expectedOutput1[0] .................................. passed
+And match response == myVar ............................................... passed
+And match response.data.id == 2 ........................................... passed
+And match response.data.last_name != null ................................. passed
+* def job_code = response.data.job_code ................................... passed
+And match job_code == null ................................................ passed
+* def expectedOutput1 = read('..//..//testdata//result1.json') ............ passed
+* def myVar = read('../../testdata/result1.yaml') ......................... passed
+* url 'https://reqres.in/api/users/' ...................................... passed
+Given path 3 .............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == expectedOutput1[1] .................................. passed</system-out>
+  </testcase>
+</testsuite>

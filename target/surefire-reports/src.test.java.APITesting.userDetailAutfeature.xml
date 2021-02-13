@@ -1,0 +1,21 @@
+<testsuite failures="1" name="src/test/java/APITesting/userDetailAut..feature" skipped="0" tests="1" time="1.188758">
+  <testcase classname="src.test.java.APITesting.userDetailAutfeature" name="Authentication test" time="1.188758">
+    <failure message="userDetailAut..feature:13 - status code was: 201, expected: 200, response time: 506, url: https://reqres.in/api/register/token, response: {&quot;createdAt&quot;:&quot;2021-01-16T22:08:47.131Z&quot;,&quot;grant_type&quot;:&quot;client_credentials&quot;,&quot;client_secret&quot;:&quot;&quot;,&quot;id&quot;:&quot;389&quot;,&quot;client_id&quot;:&quot;&quot;}">* url 'https://reqres.in/api/register' .................................... passed
+Given path 'token' ........................................................ passed
+And form field grant_type = 'client_credentials' .......................... passed
+And form field client_id = '' ............................................. passed
+And form field client_secret = '' ......................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: userDetailAut..feature:13 - status code was: 201, expected: 200, response time: 506, url: https://reqres.in/api/register/token, response: {"createdAt":"2021-01-16T22:08:47.131Z","grant_type":"client_credentials","client_secret":"","id":"389","client_id":""}&#13;
+	at ✽.Then status 200 (userDetailAut..feature:13)&#13;
+
+* def accessToken = response.access_token ................................. skipped
+Given path '' ............................................................. skipped
+And header Autherization = 'Bearer' + accessToken ......................... skipped
+When match GET ............................................................ skipped
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>

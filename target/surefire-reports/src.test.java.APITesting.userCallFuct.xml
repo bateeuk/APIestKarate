@@ -1,0 +1,18 @@
+<testsuite failures="1" name="src/test/java/APITesting/userCallFuct.feature" skipped="0" tests="1" time="1.564742">
+  <testcase classname="src.test.java.APITesting.userCallFuct" name="request user 4 details" time="1.564742">
+    <failure message="userCallFuct.feature:23 - javascript function call failed: &lt;eval&gt;:3 ReferenceError: &quot;args&quot; is not defined">* def expectedOutput = read('..//..//testdata//result1A.json') ............ passed
+Given url 'https://reqres.in/api/users?page2' ............................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+Then print 'data-------', data ............................................ passed
+* def myFun  = ............................................................ passed
+* def userDetails = call myFun data ....................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: userCallFuct.feature:23 - javascript function call failed: &lt;eval&gt;:3 ReferenceError: "args" is not defined&#13;
+	at ✽.* def userDetails = call myFun data (userCallFuct.feature:23)&#13;
+
+Then print 'userDetails---', userDetails .................................. skipped</failure>
+  </testcase>
+</testsuite>
